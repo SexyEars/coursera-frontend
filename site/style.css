@@ -1,0 +1,37 @@
+div {
+	color:gray;
+	font-size: 22px;
+}
+
+h1 {
+	color:green;
+	text-align:center;
+}
+
+h2 {
+	color:maroon;
+	margin-bottom: -20px
+}
+
+section {
+	color:black;
+	font-size: 130%;
+	font-style:italic;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	margin:5px;
+	border: 1px solid black;
+	display:block;
+	width:15%;
+	text-align: center;
+	background-color:#93FFF8;
+	color:black;
+}
+
+a:hover, a:active {
+	background-color: #93FFA9;
+	color:black;
+	font-style:bold;
+}
