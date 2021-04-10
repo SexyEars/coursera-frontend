@@ -1,0 +1,85 @@
+* {
+  	background-color: gray
+}
+
+@font-face {
+	font-family: 'New Tegomin', serif;
+	src: url(https://fonts.gstatic.com/s/newtegomin/v1/SLXMc1fV7Gd9USdBAfPlqfNxK2pvgUFtMW35ve9SGy2R4kkIFyDSKQ.2.woff2) format('woff2');
+}
+
+section {
+	box-sizing: border-box;
+	font-size: 22px;
+	padding: 2%;
+	font-family: 'New Tegomin', serif;
+}
+
+div{
+	white-space: pre-wrap;
+	background-color: white;
+}
+
+h1 {
+	color:white;
+	text-align:center;
+
+}
+
+h2 {
+	color:maroon;
+	margin-left: 50%;
+	margin-right: auto%;
+	
+	border:3px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #E0FFFF;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 5%;
+
+}
+
+.grid-item {
+  background-color: white;
+  border: 5px solid black
+}
+
+@media(min-width: 1200px) {
+	.grid {
+		grid-template-columns: 30% 30% 30%;
+		
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	.grid {
+		grid-template-columns: 50%;
+	}
+
+		.first {
+	grid-area: first;
+	}	
+
+	.second {
+		grid-area: second;
+	}
+
+	.third {
+		grid-area: third;
+	}
+
+	.grid {
+		grid-template-areas:"first second"
+							"third third";
+	}
+
+}
+
+@media (max-width: 991px) {
+	.grid{
+		grid-template-columns: 100%;
+	}
+}
