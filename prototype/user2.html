@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>User</title>
+  <title>2</title>
 </head>
 
 <body>  
@@ -20,7 +20,7 @@
             <div id = "logo-img" class= "visible" alt="main squirrel"></div>
           </a>
           <div class="navbar-brand">
-            <a href="index.html"><h1>Бельчонок,</h1></a>
+            <a href="index.html"><h1>Prototype</h1></a>
               <p>
                 <span>ждём ваших обращений</span>
               </p>
@@ -36,9 +36,9 @@
            <div id="collapsable-nav" class="collapse navbar-collapse">
              <ul id="nav-list" class="nav navbar-nav">
               <li>
-                <a href="user2.html"> Добавить обращение </a>
+                <a href="index.html"> Добавить обращение </a>
               </li>
-              <li>
+             <li>
                 <a href="https://s3.nat-geo.ru/images/2020/1/28/306f6855598749f7868d50a4c21d689b.max-2000x1000.jpg">Настройки</a>
               </li>
               <li>
@@ -55,30 +55,20 @@
     </nav>
   </header>
 
-  <section class = "grid">
-    <section class="first  grid-item">
-      <h2 class="h2_1">-----------------------------</h2>
-        <form action="handler.php">
-          <p><b>Последнее обращение</b></p>
-          <p><textarea name="comment" rows="7" cols="42" readonly>Добрый день! Потерала паспорт и СНИЛС вместе с ним, куда стоит обращаться в случае потери паспорта?</textarea></p>
-        </form>
-        <form action="handler.php">
-           <p><strong>Тема обращения:</strong> Потеря паспорта</p>
-<!--            <p><input maxlength="25" size="40" value="Потеря паспорта" readonly></p> -->
-           <p><strong>Решение: </strong>Any solution</p>
-           <!-- <p><input maxlength="25" size="40" value="Ожидайте" readonly></p> -->
-        </form>
+<!-- ----------------------------------------------------- -->
+<section class = "main">
+   <form action="handler.php">
+      <p><b>Опишите проблему:</b></p>
+      <p><textarea contenteditable name="comment" rows="10" cols="70" placeholder="Постарайтесь максимально точно описать вашу проблему"></textarea></p>
+   </form>
 
-      
-    </section>
-        <section class="second  grid-item">
-          <h2 class="h2_2">-----------------------------</h2>
-        <div class = "second">тут должны быть обращения,
-предположительно тип и дата (код связанный с бд)</div>
-<br>
-    </section>
-  </section>
-
+   <form action="handler.php">
+      <p><input type="submit"></p>
+      <p><input type="checkbox">Остаться анонимным</p>
+   </form>
+ </section>
+<!-- ----------------------------------------------------- -->
+ 
    <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
