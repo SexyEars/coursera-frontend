@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html><!-- lang="ru" -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Man2</title>
+</head>
+
+<body>  
+  <header>
+    <nav id="header-nav" class="navbar navbar-default center">
+      <div class = "container">
+        <div class = "navbar-header">
+          <a href="user2.html", class = "float-left"> </a>
+          <div class="navbar-brand">    
+                <div><h2>Система обработки обращений граждан</h2></div>
+          </div>    
+          
+<!-- ----------------------------Опции----------------------------------------- -->
+          
+<!-- -------------------------------------------------------------------------- -->
+          </div>
+          <div id="prof_name" class="navbar-brand grid withoutBackground">
+              <span>Афанасий Ананасов</span><br>
+              <span>Главный менеджер</span>
+          </div>
+      </div><!-- .collapse .navbar-collapse -->
+
+    </nav>
+  </header>
+
+  <section class = "grid container">
+    <section class="first  grid-item">
+
+        <form action="handler.php">
+          <p><b>Текст обращения</b></p>
+          <p><textarea name="comment" rows="7" cols="42" readonly>Добрый день! Потеряла паспорт и СНИЛС вместе с ним, куда стоит обращаться в случае потери паспорта?</textarea></p>
+        </form>
+        <form action="handler.php">
+          <p><b>Советчик</b></p>
+          <p><textarea name="comment" rows="7" cols="42">Обратитесь в магазин паспортов</textarea></p>
+        </form>
+        <form action="handler.php">
+          <p><strong>Одобрить?: </strong></p>
+        </form>
+        <form action="handler.php">
+            <p><input type="submit" value = "Да"  class="float-left margin-right"> 
+        </form>
+        <form action="handler.php">
+            <p><input type="submit" value = "Нет"> </p>
+        </form>
+    </section>
+        <section class="second  grid-item">
+            <div class = "second"><strong>Информация</strong></div>
+        </section>
+  </section>
+
+</body>
+</html>

@@ -16,8 +16,31 @@ body {
 	height: 150px;
 	margin: 10px 15px 10px 0;
 }
+
+.navbar-toggler {
+	padding: 0;
+	padding-bottom: 0%;
+}
+h1, h2 {
+	color: DodgerBlue;
+}
+
+section.text-center {
+	/*padding-left: 0;
+	margin-left: 0%;
+	margin-right: 0%;*/
+	background-color: Lavender;
+	padding-top: 4%;
+}
+
+.margin-right{
+	margin-right: 4%;
+}
 /*----------------------------------------------------*/
 /*NAAAAAAAAV*/
+/*.navbar-header, .navbar-brand{
+	text-align: center;
+}*/
 #nav-list{
 	margin-top:  10px;
 }
@@ -34,19 +57,20 @@ body {
 	font-size: 1.8em;
 }
 
-#phone { 
-	margin-top: 5px;
-}
 
-#phone { /*phone number*/
-	text-align: right;
+#phone, #prof_name { /*phone number*/
+	text-align: left;
 	padding-bottom: 0;
+	font-size: 0.9em;
+	padding-left: 0;
 }
 
 #phone div { /*служба поддержки*/
 	text-align: right;
 	padding-right: 15px;
+
 }
+
 
 /*@media (max-width: 768px) {
   .collapse.show {
@@ -102,13 +126,21 @@ body {
   display: grid;
   grid-gap: 3%;
   background-color: #E6E6FA;
+  padding: .5rem 1rem
   /*margin: 1% 1% 1% 1%;*/
+}
+
+.solo-grid {
+	    padding: .5rem 1rem
+/*	padding-left:  18%;*/
 }
 
 @media(min-width: 992px) {
 	.grid {
 		grid-template-columns: 45% 45%;
-		
+	}
+	.soloGrid {
+		grid-template-columns: 50% 50%;
 	}
 }
 
@@ -138,9 +170,9 @@ body {
 }
 
 /*-----------------FORM----------------------*/
-form {
+/*form {
 	text-align: center;
-}
+}*/
 
 textarea { 
 	overflow:hidden
@@ -152,10 +184,31 @@ textarea {
 	padding-bottom: 20px;
 }
 /*-----------------footer--------------------*/
+
 .panel-footer {
 	padding-top: 35px;
 	padding-bottom: 30px;
+	padding-left: 5%;
 	/*background-color: Gainsboro;*/
 	color: black;
 	border-top: 0;
 }
+
+.withoutBackground {
+	background-color: white;
+}
+
+#navbar-default {
+	padding: 0;
+	margin: 0;
+}
+
+.grid .io{
+	background-color: white;
+}
+
+.grid .kostyl {
+	background-color: lavender;
+	padding-left: 10%;
+	padding-top: 3%;
+}	
